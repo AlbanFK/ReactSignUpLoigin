@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  
+}
+
+.App {
+  height: 98vh;
+  width: 100vw;
+}
+
+#login {
+    margin: auto;
+    height: 50vh;
+    border: 1px solid black;
+    border-radius: 15%;
+    padding: 4% 3% 4% 3%;
+  }
+#signup {
+  margin: auto;
+  height: 90vh;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 4% 3% 4% 3%;
+}
+#titleLogin, #titleSignUp {
+  text-align: center;
+  font-weight: 800;
+  font-size: x-large;
+  color: rgb(156, 64, 241);
+}
+#username, #pwd, #prenom, #name, #datenais, #repwd, #email {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  color: rgb(156, 64, 241);
+  text-align: center;
+  border: 1px solid rgb(156, 64, 241);
+}
+.formCondition {
+  font-size: xx-small;
+  color: red;
+}
+
+#btnLogin, #btnSignUp2 {
+  margin-top: 20px;
+  border-radius: 30px;
+  width: 120px;
+  height: 28px;
+  border: 0px;
+  color: white; 
+  background-color: rgb(85, 26, 139);
+}
+#btnSignUp, #btnLogin2 {
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  color: rgb(156, 64, 241);
+  border: 0px;
+  background-color: white;
+}

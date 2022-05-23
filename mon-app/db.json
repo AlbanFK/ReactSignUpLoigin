@@ -1,22 +1,112 @@
 {
-    "user": [
-        {
-            "id": 1,
-            "first_name": "Sebastian",
-            "last_name": "Eschweiler",
-            "email": "sebastian@codingthesmartway.com"
-          },
-          {
-            "id": 2,
-            "first_name": "Steve",
-            "last_name": "Palmer",
-            "email": "steve@codingthesmartway.com"
-          },
-          {
-            "id": 3,
-            "first_name": "Ann",
-            "last_name": "Smith",
-            "email": "ann@codingthesmartway.com"
-          }
-    ]
+  "users": [
+    {
+      "email": "fokoalban3@gmail.com",
+      "password": "$2a$10$aaBSMwmWJovCvXKoKh6LJ.WucdEP4mbLJdXkYnO9beUbLQowDEu1q",
+      "nom": "aaaaa",
+      "prenom": "bbbb",
+      "username": "cccccc",
+      "datenais": "2022-05-01",
+      "id": 1
+    },
+    {
+      "email": "audrey@yahoo.fr",
+      "password": "$2a$10$WzeXj8.D1oRznY/juRf62uhN0Zq9V5UmOUC2N9RAUQR0meNj0tBZS",
+      "nom": "FOKO",
+      "prenom": "ALBAN",
+      "username": "AFK",
+      "datenais": "2022-05-14",
+      "id": 2
+    },
+    {
+      "email": "UlrihtPock@gmail.com",
+      "password": "$2a$10$uLGtaWjO1bfOdCuKUEWVb.i8bkKArTKsEtUz0RfGXuI0Vf0mXTtnu",
+      "nom": "tedom",
+      "prenom": "alban",
+      "username": "bios",
+      "datenais": "2022-05-31",
+      "id": 3
+    },
+    {
+      "email": "estherpock8@gmail.com",
+      "password": "$2a$10$FZ914nEXZ2xNQkjxk05r.OZbm70L6geDM.3HddC4P0z3lza.3pQSe",
+      "nom": "TCHANA",
+      "prenom": "JULIETTE",
+      "username": "JUJU",
+      "datenais": "2022-05-01",
+      "id": 4
+    },
+    {
+      "email": "tedomfoko@hada.com",
+      "password": "$2a$10$RPdUjeitQEdPF.ZsNWl2feq.zO.yLNjSf8WPtJjdana9YagLrVaz6",
+      "nom": "",
+      "prenom": "",
+      "username": "",
+      "datenais": "",
+      "id": 5
+    },
+    {
+      "email": "fffezzz@ede:com",
+      "password": "$2a$10$MJTLCgSJTnDFmcL4xUDBX.TJ/iVkJZytgzteOBQZgAGj3k9TY4kha",
+      "nom": "",
+      "prenom": "",
+      "username": "",
+      "datenais": "",
+      "id": 6
+    },
+    {
+      "email": "fgzrgrrfz@fde:fof",
+      "password": "$2a$10$iVne6MQnTX/ez1zHm0rD6eLd5zt4XuKeAsMRZgTy6D7kZcLiyu.Dm",
+      "nom": "",
+      "prenom": "",
+      "username": "",
+      "datenais": "",
+      "id": 7
+    },
+    {
+      "email": "xuuxwuu@xjx:uxu",
+      "password": "$2a$10$Fdwymq7rMGyHpOJPUVKpgumHRV/r3AHCJHdQ5omgOJWR6vWe5Ggza",
+      "nom": "",
+      "prenom": "",
+      "username": "",
+      "datenais": "",
+      "id": 8
+    },
+    {
+      "email": "hdyshyu@fsgt.co",
+      "password": "$2a$10$smVchh4q6Jv4nFGQYYMgF..eChX2jVdK86D6TdhPjfwv93yg/g8Su",
+      "nom": "",
+      "prenom": "",
+      "username": "",
+      "datenais": "",
+      "id": 9
+    },
+    {
+      "email": "VCGV@fd.co",
+      "password": "$2a$10$JQYLRNz0zhBRwDY6xWVpVeDXaehKHkyKiMIHAWWMuathG1VXYkAQi",
+      "nom": "",
+      "prenom": "",
+      "username": "",
+      "datenais": "",
+      "id": 10
+    },
+    {
+      "email": "fokoalban@tedom.com",
+      "password": "$2a$10$zrHThTxPlCU2egs7ab2RDuquPRuxhR62vidMyLG30Uw/vPz3M6ABq",
+      "nom": "FOKO2",
+      "prenom": "ALBAN2",
+      "username": "AFK2",
+      "datenais": "2022-05-14",
+      "id": 11
+    },
+    {
+      "email": "effefa@jsdu.cp",
+      "password": "$2a$10$lgevIPRg6kEVIE1R1nhI3eikOhs2n/dYAiCz4CF4N0a7Y4X3nZ0KK",
+      "nom": "",
+      "prenom": "",
+      "username": "",
+      "datenais": "",
+      "id": 12
+    }
+  ]
 }

@@ -2,6 +2,7 @@
 import { Routes, Route } from 'react-router-dom';
 import CardLogin from './Components/CardLogin';
 import CardSignUp from './Components/CardSignUp';
+import Accueil from './Components/Accueil';
 import './index.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path='/' element={<CardLogin/>} />
           <Route path='/SignUp' element={<CardSignUp/>} />
+          <Route path='/Accueil' element={<Accueil/>} />
         </Routes>
         
       </div>

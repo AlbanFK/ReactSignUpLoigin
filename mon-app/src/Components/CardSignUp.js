@@ -68,7 +68,10 @@ function CardSignUp() {
     if (infosLogin === 'Email already exists') {
       setemailOk(false)
       setmsgEmailForm('Cet email est déja utilisée, veuillez la changer')
-    } 
+      console.log(`email: ${emailOk}`)
+    } else {
+      setsubmitOk(true)
+    }
   }
 
   const handleSubmit = e => {
@@ -81,7 +84,7 @@ function CardSignUp() {
         })
         .then(res => res.json())
         .then(data => signUpErrorMsg(data))
-      setsubmitOk(true)
+      
     }
     console.log(submitOk);
   }
@@ -90,100 +93,105 @@ function CardSignUp() {
     setFormData({...formData, [e.target.name] : e.target.value})
   }
   return (
-    <div className='col-9 col-md-3 text-center' id='signup'>
+
+    <div className='App row justify-content-center align-items-center'>
+      <div className='col-9 col-md-3 text-center shadow' id='signup'>
         
-          <form>
-              <div id='titleSignUp'>INSCRPTION</div>
-              <input 
-              type='text' 
-              name='nom'
-              placeholder='Votre nom' 
-              className='form-control'
-              id='name'
-              value={formData.nom}
-              onChange={handleChange}
-              required
-              />
-              
-              <input 
-              type='text' 
-              name='prenom'
-              placeholder='Votre prenom' 
-              className='form-control'
-              id='prenom'
-              value={formData.prenom}
-              onChange={handleChange}
-              required
-              >
-              </input>
-              <input 
-              type='text' 
-              name='username'
-              placeholder='USERNAME' 
-              className='form-control'
-              id='username'
-              value={formData.username}
-              onChange={handleChange}
-              >
-              </input>
-              <input 
-              type='date' 
-              name='datenais'
-              placeholder='Date de Naissance' 
-              className='form-control'
-              id='datenais'
-              value={formData.datenais}
-              onChange={handleChange}
-              >
-              </input>
-              <input 
-              type='email' 
-              name='email'
-              placeholder='EMAIL' 
-              className='form-control'
-              id='email'
-              // value={formData.email}
-              onChange={handleEmail}
-              >
-              </input>
-              { msgEmailForm && <div className='formCondition'> {msgEmailForm}</div> }
-              <input 
-              type='password'
-              name='password' 
-              placeholder='PASSWORD' 
-              className='form-control'
-              id='pwd'
-              // value={formData.password}
-              // onChange={handleChange}
-              onChange={handlePassword}
-              >
-              </input>
-              { msgPwdForm && <div className='formCondition'> {msgPwdForm}</div> }
-              <input 
-              type='password' 
-              placeholder='CONFIRM PASSWORD' 
-              className='form-control'
-              id='repwd'
-              onChange={handleConfirmPwd}
-              >
-              </input>
-              { msgPwdConfirm && <div className='formCondition'> {msgPwdConfirm}</div> }
-              <button 
-              type='submit'
-              id='btnSignUp2'
-              onClick={handleSubmit}
-              // className='btn btn-primary'
-              >
-                SIGN UP
-              </button>
-              <Link to='/'
-              id="btnLogin2"
-              >
-                LOGIN
-              </Link>
-          </form>
-          {submitOk && navigate('/')}
+        <form class="needs-validation">
+          <div id='titleSignUp'>INSCRPTION</div>
+          <input 
+          type='text' 
+          name='nom'
+          placeholder='Votre nom' 
+          className='form-control'
+          id='name'
+          value={formData.nom}
+          onChange={handleChange}
+          required
+          />
+          
+          <input 
+          type='text' 
+          name='prenom'
+          placeholder='Votre prenom' 
+          className='form-control'
+          id='prenom'
+          value={formData.prenom}
+          onChange={handleChange}
+          required
+          >
+          </input>
+          <input 
+          type='text' 
+          name='username'
+          placeholder='USERNAME' 
+          className='form-control'
+          id='username'
+          value={formData.username}
+          onChange={handleChange}
+          >
+          </input>
+          <input 
+          type='date' 
+          name='datenais'
+          placeholder='Date de Naissance' 
+          className='form-control'
+          id='datenais'
+          value={formData.datenais}
+          onChange={handleChange}
+          >
+          </input>
+          <input 
+          type='email' 
+          name='email'
+          placeholder='EMAIL' 
+          className='form-control'
+          id='email'
+          // value={formData.email}
+          onChange={handleEmail}
+          >
+          </input>
+          { msgEmailForm && <div className='formCondition'> {msgEmailForm}</div> }
+          <input 
+          type='password'
+          name='password' 
+          placeholder='PASSWORD' 
+          className='form-control'
+          id='pwd'
+          // value={formData.password}
+          // onChange={handleChange}
+          onChange={handlePassword}
+          >
+          </input>
+          { msgPwdForm && <div className='formCondition'> {msgPwdForm}</div> }
+          <input 
+          type='password' 
+          placeholder='CONFIRM PASSWORD' 
+          className='form-control'
+          id='repwd'
+          onChange={handleConfirmPwd}
+          >
+          </input>
+          { msgPwdConfirm && <div className='formCondition'> {msgPwdConfirm}</div> }
+          <button 
+          type='submit'
+          id='btnSignUp2'
+          className='form-control'
+          onClick={handleSubmit}
+          // className='btn btn-primary'
+          >
+            SIGN UP
+          </button>
+          <Link to='/'
+          id="btnLogin2"
+          >
+            SIGN IN 
+          </Link>
+        </form>
+        {submitOk && navigate('/')}
+      </div>
     </div>
+    
     
   )
 }

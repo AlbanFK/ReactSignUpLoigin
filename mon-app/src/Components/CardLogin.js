@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 
@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 function CardLogin() {
 
   const [msgError, setmsgError] = useState('')
+  const [spinner, setSpinner] = useState(false)
   const [loginData, setloginData] = useState({
     email: '',
     password: ''
@@ -22,10 +23,14 @@ const loginErrorMsg = infosLogin => {
     setmsgError('Utilisateur non reconnu')
   } else if(infosLogin === 'Incorrect password'){
     setmsgError('mot de passe incorrect')
-  } else {
-    navigate('/Accueil')
+  } else if(infosLogin.user.email === loginData.email) {
+    setSpinner(true)
+    navigate('/Accueil') 
+    setloginData({
+      email: '',
+    password: ''
+    })
   }
-  console.log(infosLogin);
 }
 
 const handleSubmit = e => {
@@ -41,48 +46,54 @@ const handleSubmit = e => {
 
   return (
 
-    <div className='col-9 col-md-3 text-center' id='login'>
-        
-          <form>
-              <div id='titleLogin'>CONNEXION</div>
-              { msgError && <div className='alert alert-danger form-control'> {msgError}</div> }
-              <input 
-              type='text' 
-              placeholder='EMAIL' 
-              className='form-control'
-              id='email'
-              name='email'
-              value={loginData.email}
-              onChange={handleChange}
-              >
-              </input>
-              <input 
-              type='password' 
-              placeholder='PASSWORD' 
-              className='form-control'
-              id='pwd'
-              name='password'
-              value={loginData.password}
-              onChange={handleChange}
-              >
-              </input>
-              <button 
-              type='submit'
-              id='btnLogin'
-              onClick={handleSubmit}
-              // className='btn btn-primary'
-              >
-                LOGIN
-              </button>
-              <Link to='/SignUp'
-              id="btnSignUp"
-              >
-                SIGN UP
-              </Link>
-              
-          </form>
-       
+    <div className='App row justify-content-center align-items-center'>
+      <div className='col-9 col-md-3 text-center shadow' id='login'>
+    
+        <form>
+          <div id='titleLogin'>CONNEXION</div>
+          { msgError && <div className='alert alert-danger form-control'> {msgError}</div> }
+          <input 
+          type='text' 
+          placeholder='EMAIL' 
+          className='form-control'
+          id='email'
+          name='email'
+          value={loginData.email}
+          onChange={handleChange}
+          >
+          </input>
+          <input 
+          type='password' 
+          placeholder='PASSWORD' 
+          className='form-control'
+          id='pwd'
+          name='password'
+          value={loginData.password}
+          onChange={handleChange}
+          >
+          </input>
+          <button 
+          type='submit'
+          id='btnLogin'
+          className='form-control'
+          onClick={handleSubmit}
+          // className='btn btn-primary'
+          >
+            SIGN IN
+          </button>
+          <Link to='/SignUp'
+          id="btnSignUp"
+          >
+            SIGN UP
+          </Link>
+          { spinner && <div class="spinner-border text-success"></div> }
+            
+        </form>
+  
+      </div>
     </div>
+
+    
   )
 }
 

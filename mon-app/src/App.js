@@ -2,7 +2,8 @@
 import { Routes, Route } from 'react-router-dom';
 import CardLogin from './Components/CardLogin';
 import CardSignUp from './Components/CardSignUp';
-import Accueil from './Components/Accueil';
+import PageAccueil from './Components/Accueil/PageAccueil'; 
+import NavBar from './Components/Accueil/NavBar';
 import './index.css';
 
 function App() {
@@ -10,13 +11,13 @@ function App() {
   
   return (
     
-      <div className="App row justify-content-center align-items-center">
+      <div className="container-fluid">
+        <NavBar/>
         <Routes>
-          <Route path='/' element={<CardLogin/>} />
-          <Route path='/SignUp' element={<CardSignUp/>} />
-          <Route path='/Accueil' element={<Accueil/>} />
+          {/* <Route path='/' element={<CardLogin/>} />
+          <Route path='/SignUp' element={<CardSignUp/>} /> */}
+          <Route path='/' element={<PageAccueil/>} />
         </Routes>
-        
       </div>
     
   );

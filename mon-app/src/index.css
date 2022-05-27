@@ -3,41 +3,61 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  background-color: #FCFCFC;
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/03/21/48/drinks-2578446_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+ 
+}
+/* #nav-and-search{
   
+  
+} */
+#search-page{
+  background-color: white;
+}
+
+#list-cat-container {
+ 
 }
 
 .App {
   height: 98vh;
-  width: 100vw;
 }
 
 #login {
     margin: auto;
     height: 50vh;
-    border: 1px solid black;
+    border: 0px;
     border-radius: 15%;
     padding: 3% 3% 4% 3%;
+    background-color: rgb(255, 255, 255);
   }
 #signup {
   margin: auto;
+  margin-top: 100px;
   height: 90vh;
-  border: 1px solid black;
-  border-radius: 50px;
+  border: 0px;
+  border-radius: 40px;
   padding: 1% 3% 4% 3%;
+  background-color: white;
 }
 #titleLogin, #titleSignUp {
   text-align: center;
   font-weight: 800;
   font-size: x-large;
-  color: rgb(156, 64, 241);
+  color: #fdb924;
 }
 #username, #pwd, #prenom, #name, #datenais, #repwd, #email {
   margin-top: 15px;
   margin-bottom: 10px;
   border-radius: 30px;
-  color: rgb(156, 64, 241);
+  /* color: #fdb924; */
   text-align: center;
-  border: 1px solid rgb(156, 64, 241);
+  border: 1px solid white;
+  background-color: rgb(240, 240, 240);
+  text-align: start;
+  padding-left: 20px;
 }
 .formCondition {
   font-size: xx-small;
@@ -45,23 +65,119 @@ body {
 }
 
 #btnLogin, #btnSignUp2 {
-  margin-top: 20px;
+  margin-top: 40px;
   border-radius: 30px;
-  width: 120px;
+  /* width: 120px;
   height: 28px;
-  border: 0px;
+  border: 0px; */
   color: white; 
-  background-color: rgb(85, 26, 139);
+  background-color: #fdb924;
 }
 #btnSignUp, #btnLogin2 {
   text-decoration: none;
   cursor: pointer;
   display: block;
   margin: auto;
-  color: rgb(156, 64, 241);
+  color: #fdb924;
   border: 0px;
   background-color: white;
 }
 .alert {
   padding: 2px 1px 2px 1px;
 }
+.page {
+  border: 1px solid black;
+  margin-top: 0px;
+}
+#localisation {
+  margin-top: 60px;
+}
+#search-bar{
+  margin-top: 30vh;
+  padding-top: 50px;
+}
+#search {
+  border-radius: 30px;
+  /* border: 1px solid white; */
+  border: 0px;
+  background-color: rgb(255, 255, 255);
+  padding-left: 30px;
+}
+#buttonSearch {
+  border: 0px; 
+  background-color: rgba(255, 255, 255, 0); 
+}
+#buttonSearch:hover {
+  color: rgb(253, 185, 36);
+}
+#list-cat-container {
+  margin-top: 20vh;
+}
+/* #cocktailName {
+  height: 50px;
+} */
+#cat-title{
+  color: #fdb924;
+}
+
+#cat-title-container{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#see-all:hover {
+  color: #fdb924;
+  cursor: pointer;
+}
+#cocktailCard{
+  padding: 0px;
+  border-radius: 8%;
+  background-color: rgb(255, 255, 255);
+}
+#img-card {
+  border-radius: 12%;
+}
+#img-container:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+  border-radius: 12%;
+}
+.card-img-bottom {
+  width: 100%;
+}
+#cocktailCard {
+  margin: 5px 5px 5px 5px;
+  border: 0px;
+}
+#cocktailDetails {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 8%;
+}
+#instructionCocktail {
+  max-height: min-content;
+}
+#cardcat-container {
+  justify-content: space-evenly;
+  background-color: white;
+}
+#cardcat {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: white;
+  border: 0px;
+  
+}
+/* #img-card {
+ 
+} */
+#view-mor {
+  margin-top: 5px;
+  text-align: end;
+}
+#result-search {
+  background-color: white;
+  z-index: 10;
+  margin-top: 0px;
+}
+.view {
+  margin-top: 100px;
+}
+
